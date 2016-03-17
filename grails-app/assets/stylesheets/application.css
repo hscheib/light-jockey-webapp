@@ -1,0 +1,14 @@
+.navbar {
+    height:75px;
+    margin-bottom: 20px;
+}
+
+.navbar-text {
+    padding-top: 20px !important;
+}
+.blue-nav {
+    background: #008080;
+}
+.white {
+    color:white;
+}

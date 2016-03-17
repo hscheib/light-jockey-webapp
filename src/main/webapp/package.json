@@ -1,0 +1,31 @@
+{
+  "name": "hue-controllerP",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.1",
+    "reactify": "^1.1.0",
+    "through2": "^0.6.3"
+  },
+  "dependencies": {
+    "event": "^1.0.0",
+    "flux": "^2.0.1",
+    "fluxxor": "^1.5.2",
+    "history": "^1.15.0",
+    "lodash": "^4.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^1.0.1",
+    "semantic-ui": "^2.1.6",
+    "superagent": "^1.1.0"
+  }
+}

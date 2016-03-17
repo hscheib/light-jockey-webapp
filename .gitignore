@@ -1,0 +1,6 @@
+.asscache
+.gradle
+.idea
+build
+*.iml
+
