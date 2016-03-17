@@ -34,7 +34,8 @@ var setLightId = function(id) {
 }
 var LightJockeyActions = {
     setLightId: function(id){
-       setLightId(id);
+        setLightId(id);
+        console.log("set light id ",id);
     },
     changeColor: function (c) {
         Dispatcher.dispatch({
