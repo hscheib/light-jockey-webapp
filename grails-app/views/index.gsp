@@ -3,7 +3,7 @@
 <head>
     <title>Light Jockey</title>
     <asset:stylesheet href="application.css"/>
-    <asset:stylesheet href="index.css"/>
+    <asset:stylesheet href="react-color-picker.css"/>
     <asset:stylesheet href="semantic.min.css"/>
 </head>
 

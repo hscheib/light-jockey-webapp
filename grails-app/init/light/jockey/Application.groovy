@@ -1,4 +1,4 @@
-package light.jockey.webapp
+package light.jockey
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

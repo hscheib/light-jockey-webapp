@@ -14,7 +14,7 @@ buildscript {
 }
 
 version "0.1"
-group "light.jockey.webapp"
+group "light.jockey"
 
 apply plugin:"eclipse"
 apply plugin:"idea"

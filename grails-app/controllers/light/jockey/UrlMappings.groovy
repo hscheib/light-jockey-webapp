@@ -1,4 +1,4 @@
-package light.jockey.webapp
+package light.jockey
 
 class UrlMappings {
 

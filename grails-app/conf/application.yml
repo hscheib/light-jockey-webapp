@@ -50,7 +50,7 @@ environments:
 grails:
     profile: web
     codegen:
-        defaultPackage: light.jockey.webapp
+        defaultPackage: light.jockey
     spring:
         transactionManagement: false
 info:
