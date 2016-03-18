@@ -1,4 +1,5 @@
 var React = require('react');
+var ColorPicker = require('react-color-picker')
 
 var LightJockeyActions = require('../actions/lightJockeyActions.js');
 var LightJockeyStore = require('../stores/lightJockeyStore.js');
@@ -11,6 +12,8 @@ var getStateFromStores = function () {
         hueState: LightJockeyStore.getHueState()
     }
 };
+
+var COLOR = '#2bd865';
 
 var Root = React.createClass({
     getInitialState: function () {
@@ -26,6 +29,10 @@ var Root = React.createClass({
 
     _onChange: function () {
         this.setState(getStateFromStores());
+    },
+    onDrag: function (color, c) {
+        COLOR = color;
+        LightJockeyActions.changeColor(color);
     },
     render: function () {
 
@@ -47,6 +54,13 @@ var Root = React.createClass({
             <div>
                 <NavBar/>
                 <div className="ui grid container">
+                    <div className="six wide column">
+                        <h2 className="ui center aligned header">Choose Light Color</h2>
+                        <ColorPicker value={COLOR} onDrag={this.onDrag}/>
+                        <div style={{background: COLOR, width: 100, height: 50, color: 'white'}}>
+                            {COLOR}
+                        </div>
+                    </div>
                     <div className="four wide column">
                         <h2 className="ui center aligned header">All Lights ({lightCount})</h2>
                         {rows}

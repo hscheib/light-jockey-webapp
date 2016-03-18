@@ -5,6 +5,10 @@ var Color = require("color")
 
 var lightId = 1;
 
+var hueBridgeIp = "192.168.1.130";
+var hueKey = "210b0eea1366f719644ef2e2307c1923";
+
+
 var dispatchError = function (error, action) {
     Dispatcher.dispatch({
         action: action,
@@ -60,7 +64,7 @@ var LightJockeyActions = {
         bri = Math.round(255 * briPercent);
 
         request
-            .put("http://192.168.1.130/api/210b0eea1366f719644ef2e2307c1923/lights/"+lightId+"/state")
+            .put("http://"+hueBridgeIp+"/api/"+hueKey+"/lights/"+lightId+"/state")
             .set('Accept', 'application/json')
             .send({on: true, hue: hue, bri: bri, sat: sat, transitiontime: 1})
             .end(function (err, res) {
@@ -92,7 +96,7 @@ var LightJockeyActions = {
 
 
         request
-            .get("http://192.168.1.130/api/210b0eea1366f719644ef2e2307c1923/lights/")
+            .get("http://"+hueBridgeIp+"/api/"+hueKey+"/lights/")
             .set('Accept', 'application/json')
             .end(function (err, res) {
                 if (hasError(err, res)) {
