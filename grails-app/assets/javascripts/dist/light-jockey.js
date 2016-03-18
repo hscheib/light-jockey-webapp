@@ -6,8 +6,10 @@ var Color = require("color")
 
 var lightId = 1;
 
-var hueBridgeIp = "192.168.1.130";
-var hueKey = "210b0eea1366f719644ef2e2307c1923";
+//var hueBridgeIp = "192.168.1.130";
+var hueBridgeIp = "192.168.0.25";
+//var hueKey = "210b0eea1366f719644ef2e2307c1923";
+var hueKey = "UF1AkCk8MGuKtPokAvuFrHQMF5IFj-F9lQCsIKYs";
 
 
 var dispatchError = function (error, action) {
