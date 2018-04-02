@@ -10,7 +10,9 @@
 <body>
     <div id="root"></div>
 
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 
+        <asset:javascript src="semantic.min.js"/>
         <asset:javascript src="dist/light-jockey.js"/>
     </body>
 </html>

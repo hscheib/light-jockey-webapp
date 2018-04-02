@@ -7,6 +7,7 @@ var Constants = {
     GET_HUE_SUCCESS: 'get_hue_success',
     GET_HUE_FAILED: 'get_hue_failed',
 
+    NEED_KEY: 'need_key',
 
     UPDATE_APP_PATH: 'update_app_path',
 
